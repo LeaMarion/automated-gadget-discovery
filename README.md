@@ -8,13 +8,13 @@ This repository accompanies the paper "Automated gadget discovery in Science".
 
 To reproduce the results for the quantum optics environment, run the command line below which automatically loads the configuration file with the corresponding hyperparameters.
 
-```bash
+```
 python run_qo_ddqn.py --run {0->9}
 ```
 
 Then, run the following run file with the default hyperparameter settings. 
 
-```bash
+```
 pyhton run_qo_clustering.py 
 ```
 
