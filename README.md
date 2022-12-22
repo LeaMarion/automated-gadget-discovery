@@ -12,52 +12,36 @@ To reproduce the results for the quantum optics environment, run the command lin
 
 Then, run the following run file with the default hyperparameter settings. 
 
-```
-pyhton run_qo_clustering.py 
-```
+```pyhton run_qo_clustering.py```
 
 After running the files above to generate the data, Table 4 and Table 5 can be reproduce by running the following data analysis file. This file saves the tables as csv-files in the results directory in the corresponding subfolder “analysis-and-plots”.
 
-```bash
-pyhton run_qo_analysis.py
-```
+```pyhton run_qo_analysis.py```
 
 To try different hyperparameter settings, a copy of the config file exp_0 can be adapted and saved in the same folder under the name exp 1 and then run with the following command:  
 
-```bash
-python run_qo_ddqn.py --num_config 1
-```
+```python run_qo_ddqn.py --num_config 1```
 
 ### Quantum Information Environment
 
 ## Directories
 
-```bash
-agents
-```
+```agents```
 
 This directory contains the code for the agents: the MCTS and DDQN agent. The code of the DDQN agent is derived from the repository “”. 
 
-```bash
-clustering
-```
+```clustering```
 
 This directory contains the code for clustering the gadgets. 
 
-```bash
-configurations
-```
+```configurations```
 
 The files containing the parameter configuration to reproduce the results are stored in this directory. 
 
-```bash
-data_mining
-```
+```data_mining```
 
 This directory contains all the code for the gadget mining. 
 
-```bash
-results
-```
+```results```
 
 The results produced by any of the runfiles are saved in this directory.
