@@ -2,6 +2,7 @@
 
 This repository accompanies the paper "Automated gadget discovery in Science".
 
+
 ## Runfiles
 
 ### Quantum Optics Environment
@@ -31,6 +32,7 @@ To reproduce the results for the quantum information environment, run the comman
 Then, run the following run file with the default hyperparameter settings. The two types of clustering, i.e. by utility and by context, can be reproduced by changing the "clustering_method" argument, in the following line. 
 
 ```python run_qi_clustering.py --clustering_method 'context'```
+
 ```python run_qi_clustering.py --clustering_method 'utility'```
 
 After running the files above to generate the data, Fig. 7, Table 8, Table 9 and Table 10 can be reproduced by running the following data analysis file. This file saves the tables as csv-files in the results directory in the corresponding subfolder “analysis-and-plots”.
