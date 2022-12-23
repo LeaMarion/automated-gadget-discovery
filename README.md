@@ -20,9 +20,32 @@ After running the files above to generate the data, Table 4 and Table 5 can be r
 
 To try different hyperparameter settings, a copy of the config file exp_0 can be adapted and saved in the same folder under the name exp 1 and then run with the following command:  
 
-```python run_qo_ddqn.py --num_config 1```
+```python run_qo_mcts.py --num_config 1```
 
 ### Quantum Information Environment
+
+To reproduce the results for the quantum information environment, run the command line below which automatically loads the configuration file with the corresponding hyperparameters.
+
+```python run_qi_ddqn.py --experiment 'ddqn_cycle_classification' --num_config 3 --run {0->2}```
+
+Then, run the following run file with the default hyperparameter settings. The two types of clustering, i.e. by utility and by context, can be reproduced by changing the "clustering_method" argument, in the following line. 
+
+```python run_qi_clustering.py --clustering_method 'context'```
+```python run_qi_clustering.py --clustering_method 'utility'```
+
+After running the files above to generate the data, Fig. 7, Table 8, Table 9 and Table 10 can be reproduced by running the following data analysis file. This file saves the tables as csv-files in the results directory in the corresponding subfolder “analysis-and-plots”.
+
+```python run_qi_analysis.py```
+
+To visualize circuits in the initialization sets, run the following file:
+
+```python run_qi_analysis_init_sets.py```
+
+In all files, the main path of the folders can be changed in MAIN_PATH inside the corresponding file.
+
+To try different hyperparameter settings, a copy of the config file exp_3 can be adapted and saved in the same folder under the name exp 4 and then run with the following command:
+
+```python run_qi_ddqn.py --num_config 4```
 
 ## Directories
 
